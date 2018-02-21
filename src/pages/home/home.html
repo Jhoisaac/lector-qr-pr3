@@ -1,14 +1,25 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="dark">
     <ion-title>
-      Ionic Blank
+      Zhumir Latin
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="fondo-home">
+  <div class="styleInicioLogo">
+    <img src="assets/imgs/zhumir_home.jpg" alt="Logo inicio">
+  </div>
+  <div class="centrado">
+    <br>
+    <button ion-button icon-left (click)="scan()" color="vino"><ion-icon name="md-barcode"></ion-icon>Escanear QR</button>
+    <br>
+    <br>
+  </div>
+  <ion-list>
+    <ion-item style="background-color: black">
+      <h1><a style="color: white" href="{{data.text}}">{{data.text}}</a></h1>
+
+    </ion-item>
+  </ion-list>
 </ion-content>

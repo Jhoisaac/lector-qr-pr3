@@ -2,5 +2,7 @@
   "name": "prueba01_qr",
   "app_id": "",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
